@@ -7,8 +7,8 @@
 ## How to use my AI models?:
 
 1. **copy the Lab codes and paste them into a separate Python file**
-2. **remove all plotting code: remove all visualization commands (`plt.show()`, `plt.imshow()`, `plt.figure()`, `etc.`)**
-3. **Load the saved model: Use `load_model()` to load your trained model file:**
+2. **remove all plotting code and remove all visualization commands (`plt.show()`, `plt.imshow()`, `plt.figure()`, `etc.`)**
+3. **load the saved model and use `load_model()` to load your trained model file:**
 ```python
 
 from tensorflow.keras.models import load_model
