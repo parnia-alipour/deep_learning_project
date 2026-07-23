@@ -12,6 +12,8 @@ AI for liver tumor disease detection (implemented conv2D)===[kidney_tumor](https
 
 AI for predicting the location of coronary artery blockage in medical images (using segmentation masks and a resNet34 model without pre trained weights)===[heart](https://github.com/parnia-alipour/deep_learning_project/blob/master/Heart_disease_diagnosis.ipynb)
 
+AI for detecting fire using the YOLOv8s model===[fire_detection](https://github.com/parnia-alipour/deep_learning_project/blob/master/Fire_detection.ipynb)
+
 
 ### In deep learning, what happens?
 
