@@ -4,6 +4,9 @@ Artificial intelligence for Persian-to-English language translation===(Sequence-
 
 Artificial intelligence for predicting Bitcoin prices (trained with the LSTM algorithm)===[BTC.ipynb](https://github.com/parnia-alipour/deep_learning_project/blob/master/BTC.ipynb)
 
+AI for Thalassemia Disease Prediction Using a Simple Dense Architecture Only===[thalassemia](https://github.com/parnia-alipour/deep_learning_project/blob/master/thalassemia_prediction.ipynb)
+
+AI for Predicting Engine Failure Time (Using All 4 Datasets with Different Scenarios)===[nasa]()
 
 ### In deep learning, what happens?
 
