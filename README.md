@@ -8,7 +8,7 @@ AI for Thalassemia Disease Prediction Using a Simple Dense Architecture Only===[
 
 AI for Predicting Engine Failure Time (Using All 4 Datasets with Different Scenarios)===[nasa](https://github.com/parnia-alipour/deep_learning_project/blob/master/NASA_engine_rul_prediction.ipynb)
 
-AI for Liver Tumor Disease Detection (implemented Conv2D)===[kidney_tumor]()
+AI for Liver Tumor Disease Detection (implemented Conv2D)===[kidney_tumor](https://github.com/parnia-alipour/deep_learning_project/blob/master/kidney_tumor_prediction.ipynb)
 ### In deep learning, what happens?
 
 ![demo](G.gif)
