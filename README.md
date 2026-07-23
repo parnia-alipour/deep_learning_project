@@ -4,7 +4,7 @@
 
 ----
 
-## How to use my AI models?:
+## How you can use my AI models?:
 
 1. **copy the Lab codes and paste them into a separate Python file**
 2. **remove all plotting code and remove all visualization commands (`plt.show()`, `plt.imshow()`, `plt.figure()`, `etc.`)**
