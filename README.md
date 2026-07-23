@@ -15,7 +15,7 @@ from tensorflow.keras.models import load_model
 model=load_model("name_AI.keras",compile=False)
 
 ```
-4. **Apply a `for` or `while` loop to the code so you can test multiple times and get results**
+4. **apply a `for` or `while` loop to the code so you can test multiple times and get results**
 
 
 ---
