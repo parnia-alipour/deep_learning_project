@@ -1,14 +1,37 @@
+
+### for receiving the data that the training was done with, please message me on Telegram‼️🙏
+**Due to GitHub's file size limitations and the large size of the datasets, they cannot be pushed**
+
+----
+
+## How to use my AI models?:
+
+1. **copy the Lab codes and paste them into a separate Python file**
+2. **remove all plotting code: remove all visualization commands (`plt.show()`, `plt.imshow()`, `plt.figure()`, `etc.`)**
+3. **Load the saved model: Use `load_model()` to load your trained model file:**
+```python
+
+from tensorflow.keras.models import load_model
+model=load_model("name_AI.keras",compile=False)
+
+```
+4. Apply a `for` or `while` loop to the code so you can test multiple times and get results
+
+
+---
+
+
 AI for detecting breast cancer from images===[BreastMNIST](https://github.com/parnia-alipour/deep_learning_project/blob/master/BreastMNIST.ipynb)
 
 AI for persian to english language translation===(Sequence-to-sequence)[Translator](https://github.com/parnia-alipour/deep_learning_project/blob/master/Translator.ipynb)
 
-َAI for predicting Bitcoin prices (trained with the LSTM algorithm)===[BTC](https://github.com/parnia-alipour/deep_learning_project/blob/master/BTC.ipynb)
+َََAI for predicting Bitcoin prices (trained with the LSTM algorithm)===[BTC](https://github.com/parnia-alipour/deep_learning_project/blob/master/BTC.ipynb)
 
 AI for thalassemia disease prediction using a simple dense architecture only===[thalassemia](https://github.com/parnia-alipour/deep_learning_project/blob/master/thalassemia_prediction.ipynb)
 
 AI for predicting engine failure time (using all 4 datasets with different scenarios)===[nasa](https://github.com/parnia-alipour/deep_learning_project/blob/master/NASA_engine_rul_prediction.ipynb)
 
-AI for liver tumor disease detection (implemented conv2D)===[kidney_tumor](https://github.com/parnia-alipour/deep_learning_project/blob/master/kidney_tumor_prediction.ipynb)
+AI for kidney tumor disease detection (implemented conv2D)===[kidney_tumor](https://github.com/parnia-alipour/deep_learning_project/blob/master/kidney_tumor_prediction.ipynb)
 
 AI for predicting the location of coronary artery blockage in medical images (using segmentation masks and a resNet34 model without pre trained weights)===[heart](https://github.com/parnia-alipour/deep_learning_project/blob/master/Heart_disease_diagnosis.ipynb)
 
