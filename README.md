@@ -4,7 +4,7 @@
 
 ----
 
-## How to use my AI models and labs:
+## How you can use my AI models and labs?:
 
 1. **after training is completed in the labs, copy and paste the code into a Python file**
 
