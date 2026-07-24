@@ -8,7 +8,7 @@
 
 1. **after training is completed in the labs, copy and paste the code into a Python file**
 
-2.**it's preferable to keep all the code as is, except for removing model.fit() and any plotting code (plt.show(), plt.figure(), etc.).**
+2. **it's preferable to keep all the code as is, except for removing model.fit() and any plotting code (plt.show(), plt.figure(), etc.).**
 
 3. **make sure you've saved your model,load your saved model using `load_model()`:**
 ```python
