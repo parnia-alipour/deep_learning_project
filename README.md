@@ -6,6 +6,9 @@
 [thalassemia data](https://www.kaggle.com/datasets/abhraghoshcmc/hplc-based-thalassemia-screening-data)
 
 [kidney tumor data](https://figshare.com/articles/dataset/SMC-LUD_Liver_Ultrasound_Dataset_HCC_vs_Hemangioma_/31112716)
+
+[nasa data predicting engine failure time](https://phm-datasets.s3.amazonaws.com/NASA/6.+Turbofan+Engine+Degradation+Simulation+Data+Set.zip)
+
 ----
 
 ## How you can use my AI models and labs?:
