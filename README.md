@@ -1,7 +1,7 @@
 
 ## datasets:
 
-[detecting fired data](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
+[detecting fire data](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
 
 [thalassemia data](https://www.kaggle.com/datasets/abhraghoshcmc/hplc-based-thalassemia-screening-data)
 
@@ -10,6 +10,8 @@
 [nasa data predicting engine failure time](https://phm-datasets.s3.amazonaws.com/NASA/6.+Turbofan+Engine+Degradation+Simulation+Data+Set.zip)
 
 [persian sentiment](https://github.com/phosseini/SentiPers/tree/master/data)
+
+
 ----
 
 ## How you can use my AI models and labs?:
