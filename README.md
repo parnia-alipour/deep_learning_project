@@ -11,6 +11,7 @@
 
 [persian sentiment](https://github.com/phosseini/SentiPers/tree/master/data)
 
+[english sentiment](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 ----
 
