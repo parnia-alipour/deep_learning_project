@@ -1,10 +1,13 @@
 
-### for receiving the data that the training was done with, please message me on Telegram‼️🙏
-**Due to GitHub's file size limitations and the large size of the datasets, they cannot be pushed**
+## datas:
+
+[detecting fired ata](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
 
 ----
 
 ## How you can use my AI models and labs?:
+
+(Download the datasets from the section above)
 
 1. **after training is completed in the labs, copy and paste the code into a Python file**
 
