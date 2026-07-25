@@ -1,8 +1,11 @@
 
 ## datas:
 
-[detecting fired ata](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
+[detecting fired data](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
 
+[thalassemia data](https://www.kaggle.com/datasets/abhraghoshcmc/hplc-based-thalassemia-screening-data)
+
+[]()
 ----
 
 ## How you can use my AI models and labs?:
