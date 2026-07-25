@@ -5,7 +5,7 @@
 
 [thalassemia data](https://www.kaggle.com/datasets/abhraghoshcmc/hplc-based-thalassemia-screening-data)
 
-[]()
+[kidney tumor data](https://figshare.com/articles/dataset/SMC-LUD_Liver_Ultrasound_Dataset_HCC_vs_Hemangioma_/31112716)
 ----
 
 ## How you can use my AI models and labs?:
