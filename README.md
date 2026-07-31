@@ -1,7 +1,7 @@
 
 ## datasets:
 
-[detecting fire data](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda)
+[detecting fire data](https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda) **Download FASDD_UAV.zip**
 
 [thalassemia data](https://www.kaggle.com/datasets/abhraghoshcmc/hplc-based-thalassemia-screening-data)
 
