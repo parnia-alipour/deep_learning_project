@@ -21,7 +21,7 @@
 
 1. **after training is completed in the labs, copy and paste the code into a Python file**
 
-2. **it's preferable to keep all the code as is, except for removing model.fit() and any plotting code (plt.show(), plt.figure(), etc.).**
+2. **Keep the model architecture, preprocessing steps, and required components unchanged. Remove only the training process such as model.fit() and unnecessary plotting code.**
 
 3. **make sure you've saved your model,load your saved model using `load_model()`:**
 ```python
@@ -31,7 +31,30 @@ model=load_model("name_AI.keras",compile=False)
 
 ```
 4. **apply a `for` or `while` loop to the code so you can test multiple times and get results**
+5. **Implement the required preprocessing and input pipeline for each model architecture:**
 
+After loading the trained model, do not directly pass raw data to the model. Each AI model requires its own specific preprocessing steps depending on its architecture.
+
+* For **CNN models**:
+
+  * Apply image preprocessing steps used during training (such as resizing, normalization, and adding batch dimensions).
+  * Prepare the image input in the same shape and format as the training data.
+  * Then pass the processed input to `model.predict()`.
+
+* For **RNN/LSTM/GRU models**:
+
+  * Apply the same sequence preprocessing used during training (such as tokenization, padding, scaling, or sequence generation).
+  * Convert the input data into the required sequence format.
+  * Then pass the processed sequence to the model.
+
+* For other architectures (Transformer, Autoencoder, etc.):
+
+  * Reproduce the exact preprocessing and input preparation pipeline used during training.
+  * Ensure that the input dimensions and data format match the model requirements.
+
+    
+6. **Finally, add an input inside a loop and enter the required values**
+**Make sure that all model-specific architecture steps required for testing, preprocessing, and input generation are implemented inside the loop.**
 
 ---
 
