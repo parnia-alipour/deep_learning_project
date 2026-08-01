@@ -54,7 +54,7 @@ After loading the trained model, do not directly pass raw data to the model. Eac
 
     
 6. **Finally, add an input inside a loop and enter the required values**
-**Make sure that all model-specific architecture steps required for testing, preprocessing, and input generation are implemented inside the loop.**
+**Make sure that all model specific architecture steps required for testing, preprocessing, and input generation are implemented inside the loop.**
 
 
 ---
