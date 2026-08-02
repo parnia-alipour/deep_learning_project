@@ -31,3 +31,7 @@ class Prediction(BaseModel):
     RDWcv:float
     Weekness: str
     Jaundice:str
+
+
+@app.post("/predict/thalassemia")
+def
