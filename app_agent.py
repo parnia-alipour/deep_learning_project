@@ -34,7 +34,7 @@ class Prediction(BaseModel):
     Jaundice:str
 
 
-@app.post("/predict/thalassemia")
+@API.post("/predict/thalassemia")
 def predict(data:Prediction):
     age_enc=lb2.transform([data.Age])[0]
     gender_enc=lb5.transform([data.Gender])[0]
