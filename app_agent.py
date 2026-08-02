@@ -37,9 +37,9 @@ class Prediction(BaseModel):
 @app.post("/predict/thalassemia")
 def predict(data:Prediction):
     age_enc=lb2.transform([data.Age])[0]
-    gender_enc=lb3.transform([data.Gender])[0]
-    weakness_enc=lb4.transform([data.Weekness])[0]
-    jaundice_enc=lb5.transform([data.Jaundice])[0]
+    gender_enc=lb5.transform([data.Gender])[0]
+    weakness_enc=lb3.transform([data.Weekness])[0]
+    jaundice_enc=lb4.transform([data.Jaundice])[0]
 
     features=np.array([[age_enc, gender_enc, data.HbA0, data.HbA2, data.HbF,
         data.S_Window, data.RBC, data.HB, data.MCV, data.MCH,
