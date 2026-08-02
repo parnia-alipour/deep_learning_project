@@ -12,7 +12,7 @@ with open("thalassemia_artifacts.pkl","rb") as f:
     Artifacts=pickle.load(f)
 scaler=Artifacts["scaler"]
 lb2=Artifacts["label_encoder_age"]
-lb3=Artifacts["label_encoder_workclass"]
+lb3=Artifacts["label_encoder__weakness"]
 lb4=Artifacts["label_encoder_jaundice"]
 lb5=Artifacts["label_encoder_gender"]
 threshold=Artifacts["best_threshold"]
