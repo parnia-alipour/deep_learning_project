@@ -16,3 +16,18 @@ lb4=Artifacts["label_encoder_jaundice"]
 lb5=Artifacts["label_encoder_gender"]
 threshold=Artifacts["best_threshold"]
 
+class Prediction(BaseModel):
+    Age: str
+    Gender: str
+    HbA0: float
+    HbA2: float
+    HbF: float
+    S_Window:float
+    RBC:float
+    HB:float
+    MCV:float
+    MCH: float
+    MCHC: float
+    RDWcv:float
+    Weekness: str
+    Jaundice:str
