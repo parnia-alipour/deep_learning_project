@@ -2,6 +2,7 @@ import pickle
 import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
+from pyexpat import features
 from tensorflow.keras.models import load_model
 
 API=FastAPI()
@@ -34,4 +35,23 @@ class Prediction(BaseModel):
 
 
 @app.post("/predict/thalassemia")
-def
+def predict(data:Prediction):
+    age_enc=lb2.transform([data.Age])[0]
+    gender_enc=lb3.transform([data.Gender])[0]
+    weakness_enc=lb4.transform([data.Weekness])[0]
+    jaundice_enc=lb5.transform([data.Jaundice])[0]
+
+    features=np.array([[age_enc, gender_enc, data.HbA0, data.HbA2, data.HbF,
+        data.S_Window, data.RBC, data.HB, data.MCV, data.MCH,
+        data.MCHC, data.RDWcv, weakness_enc, jaundice_enc
+    ]])
+
+    features_scaled=scaler.transform(features)
+    prob=float(model.predict(features_scaled)[0][0])
+    diagnosis="sick" if prob>threshold else "healthy"
+
+    return{
+        "diagnosis":diagnosis,
+        "sick_probability_percent":round(prob*100,2),
+    "healthy_probability_percent":round((prob*100,2))
+}
