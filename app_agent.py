@@ -53,5 +53,5 @@ def predict(data:Prediction):
     return{
         "diagnosis":diagnosis,
         "sick_probability_percent":round(prob*100,2),
-    "healthy_probability_percent":round((prob*100,2))
+    "healthy_probability_percent":round((1-prob*100,2))
 }
