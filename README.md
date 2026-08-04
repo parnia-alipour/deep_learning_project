@@ -80,6 +80,6 @@ AI for detecting fire using the YOLOv8s model===[fire_detection](https://github.
 ### In deep learning, what happens?
 
 
-![demo](G.gif)
+![demo](https://github.com/parnia-alipour/deep_learning_project/blob/master/for%20readme/ScreenRecording2026-08-03212013-ezgif.com-crop-video.mp4)
 
 [Site address](https://playground.tensorflow.org/#activation=tanh&batchSize=18&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=10&networkShape=4,4,2&seed=0.66940&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
