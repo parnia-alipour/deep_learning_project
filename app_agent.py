@@ -34,3 +34,20 @@ def predict(Age,Gender,HbA0,HbA2,HbF,S_Window,RBC,HB,MCV,MCH,MCHC,RDWcv,Weekness
         "sick_probability_percent":round(prob*100,2),
     "healthy_probability_percent":round((1-prob)*100,2)
 }
+
+demo=gr.Interface(fn=predict,inputs=[
+        gr.Textbox(label="Age"),
+        gr.Textbox(label="Gender"),
+        gr.Number(label="HbA0"),
+        gr.Number(label="HbA2"),
+        gr.Number(label="HbF"),
+        gr.Number(label="S_Window"),
+        gr.Number(label="RBC"),
+        gr.Number(label="HB"),
+        gr.Number(label="MCV"),
+        gr.Number(label="MCH"),
+        gr.Number(label="MCHC"),
+        gr.Number(label="RDWcv"),
+        gr.Textbox(label="Weekness"),
+        gr.Textbox(label="Jaundice"),
+    ],outputs="json")
