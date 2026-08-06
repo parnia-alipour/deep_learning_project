@@ -51,3 +51,5 @@ demo=gr.Interface(fn=predict,inputs=[
         gr.Textbox(label="Weekness"),
         gr.Textbox(label="Jaundice"),
     ],outputs="json")
+
+demo.launch()
