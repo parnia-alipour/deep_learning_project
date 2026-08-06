@@ -22,9 +22,9 @@ def predict(Age,Gender,HbA0,HbA2,HbF,S_Window,RBC,HB,MCV,MCH,MCHC,RDWcv,Weekness
     weakness_enc=lb3.transform([Weekness])[0]
     jaundice_enc=lb4.transform([Jaundice])[0]
 
-    features=np.array([[age_enc, gender_enc, data.HbA0, data.HbA2, data.HbF,
-        data.S_Window, data.RBC, data.HB, data.MCV, data.MCH,
-        data.MCHC, data.RDWcv, weakness_enc, jaundice_enc
+    features=np.array([[age_enc,gender_enc, HbA0,HbA2,HbF,
+        S_Window, RBC, HB,MCV, MCH,
+        MCHC,RDWcv, weakness_enc, jaundice_enc
     ]])
 
     features_scaled=scaler.transform(features)
