@@ -16,6 +16,8 @@ lb4=Artifacts["label_encoder_jaundice"]
 lb5=Artifacts["label_encoder_gender"]
 threshold=Artifacts["best_threshold"]
 
+
+@spaces.GPU
 def predict(Age,Gender,HbA0,HbA2,HbF,S_Window,RBC,HB,MCV,MCH,MCHC,RDWcv,Weekness,Jaundice):
     age_enc=lb2.transform([Age])[0]
     gender_enc=lb5.transform([Gender])[0]
