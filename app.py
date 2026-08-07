@@ -3,6 +3,8 @@ import numpy as np
 from pydantic import BaseModel
 from tensorflow.keras.models import load_model
 import gradio as gr
+import spaces
+
 
 model=load_model("HPLC.keras")
 with open("thalassemia_artifacts.pkl","rb") as f:
