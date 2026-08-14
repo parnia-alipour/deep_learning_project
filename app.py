@@ -71,4 +71,9 @@ def predict_thalassemia(data: ThalassemiaInput):
     try:
         age_enc=thal_le_age.transform([data.Age])[0]
         gender_enc=thal_le_gender.transform([data.Gender])[0]
+        wekness_enc=thal_le_weakness.transform([data.Weekness])[0]
+        jaundice_enc=thal_le_jaundice.transform([data.Jaundice])[0]
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Invalid value: {e}")
+
 
