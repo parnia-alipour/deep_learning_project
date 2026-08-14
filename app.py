@@ -67,3 +67,8 @@ def health_check():
     return {"status": "ok","diabetes_model_loaded": diabetes_model is not None}
 
 @app.post("/predict/thalassemia")
+def predict_thalassemia(data: ThalassemiaInput):
+    try:
+        age_enc=thal_le_age.transform([data.Age])[0]
+        gender_enc=thal_le_gender.transform([data.Gender])[0]
+
