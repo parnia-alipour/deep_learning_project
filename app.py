@@ -65,3 +65,5 @@ class DiabetesInput(BaseModel):
 @app.get("/")
 def health_check():
     return {"status": "ok","diabetes_model_loaded": diabetes_model is not None}
+
+@app.post("/predict/thalassemia")
