@@ -15,16 +15,18 @@ app=FastAPI(
 )
 
 
-model=load_model("HPLC.keras")
-with open("thalassemia_artifacts.pkl","rb") as f:
-    Artifacts=pickle.load(f)
-scaler=Artifacts["scaler"]
-lb2=Artifacts["label_encoder_age"]
-lb3=Artifacts["label_encoder_weakness"]
-lb4=Artifacts["label_encoder_jaundice"]
-lb5=Artifacts["label_encoder_gender"]
-threshold=Artifacts["best_threshold"]
 
+thalassemia_model=load_model("HPLC.keras")
+with open("thalassemia_artifacts.pkl","rb") as f:
+    thal_artifacts = pickle.load(f)
+thal_scaler=thal_artifacts["scaler"]
+thal_le_age=thal_artifacts["label_encoder_age"]
+thal_le_weakness=thal_artifacts["label_encoder_weakness"]
+thal_le_jaundice=thal_artifacts["label_encoder_jaundice"]
+thal_le_gender=thal_artifacts["label_encoder_gender"]
+thal_threshold=thal_artifacts["best_threshold"]
+
+diabetes_model=None
 
 
 @spaces.GPU
