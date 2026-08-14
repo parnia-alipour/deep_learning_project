@@ -91,5 +91,6 @@ def predict_thalassemia(data: ThalassemiaInput):
         "healthy_probability_percent": round((1 - prob) * 100, 2),
     }
 
+@app.post("/predict/diabetes")
 
 
