@@ -85,4 +85,11 @@ def predict_thalassemia(data: ThalassemiaInput):
     prob=float(thalassemia_model.predict(features_scaled,verbose=0)[0][0])
     diagnosis="sick" if prob > thal_threshold else "healthy"
 
+    return {
+        "diagnosis": diagnosis,
+        "sick_probability_percent":round(prob * 100, 2),
+        "healthy_probability_percent": round((1 - prob) * 100, 2),
+    }
+
+
 
