@@ -10,4 +10,4 @@ x=file[['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
           'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']]
 
 y=file['Outcome'].values
-x
+x=np.asanyarray(x)
