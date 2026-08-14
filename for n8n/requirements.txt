@@ -3,3 +3,4 @@ tensorflow
 scikit-learn
 numpy
 spaces
+fastapi, uvicorn, tensorflow-cpu, scikit-learn, numpy, pydantic
