@@ -92,5 +92,7 @@ def predict_thalassemia(data: ThalassemiaInput):
     }
 
 @app.post("/predict/diabetes")
+def predict_diabetes(data: DiabetesInput):
+
 
 
