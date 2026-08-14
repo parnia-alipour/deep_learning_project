@@ -4,6 +4,15 @@ from pydantic import BaseModel
 from tensorflow.keras.models import load_model
 import gradio as gr
 import spaces
+from fastapi import FastAPI,HTTPException
+
+
+
+app=FastAPI(
+    title="Medical Prediction API",
+    description="Thalassemia + Diabetes prediction service, powered by the developer's own trained models.",
+    version="1.0.0",
+)
 
 
 model=load_model("HPLC.keras")
@@ -15,6 +24,7 @@ lb3=Artifacts["label_encoder_weakness"]
 lb4=Artifacts["label_encoder_jaundice"]
 lb5=Artifacts["label_encoder_gender"]
 threshold=Artifacts["best_threshold"]
+
 
 
 @spaces.GPU
