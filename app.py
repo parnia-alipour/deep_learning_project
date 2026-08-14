@@ -77,3 +77,8 @@ def predict_thalassemia(data: ThalassemiaInput):
         raise HTTPException(status_code=400, detail=f"Invalid value: {e}")
 
 
+    features=np.array([[age_enc, gender_enc, data.HbA0, data.HbA2, data.HbF,
+        data.S_Window, data.RBC, data.HB, data.MCV, data.MCH,
+        data.MCHC, data.RDWcv, weakness_enc, jaundice_enc]])
+
+
