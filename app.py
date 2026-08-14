@@ -62,3 +62,6 @@ class DiabetesInput(BaseModel):
     DiabetesPedigreeFunction: float
     Age:float
 
+@app.get("/")
+def health_check():
+    return {"status": "ok","diabetes_model_loaded": diabetes_model is not None}
