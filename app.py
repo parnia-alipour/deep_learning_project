@@ -103,3 +103,9 @@ def predict_diabetes(data: DiabetesInput):
     pred=int(diabetes_model.predict(features)[0])
     proba=diabetes_model.predict_proba(features)[0]
     sick_prob=float(proba[1])
+
+    return {
+        "diagnosis":"sick" if pred==1 else "healthy",
+        "sick_probability_percent":round(proba * 100, 2),
+        "healthy_probability_percent": round((1 - proba) * 100, 2),
+    }
