@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import gradio as gr
 import spaces
 from fastapi import FastAPI,HTTPException
-
+from pydantic import BaseModel,Field
 
 
 app=FastAPI(
@@ -28,6 +28,39 @@ thal_threshold=thal_artifacts["best_threshold"]
 
 diabetes_model=None
 
+try:
+    with open("diabetes_model.pkl", "rb") as f:
+        diabetes_model = pickle.load(f)
+except FileNotFoundError:
+    diabetes_model = None
+
+
+class ThalassemiaInput(BaseModel):
+    Age:str =Field(..., description='format: "25 Yrs 3 month"')
+    Gender:str
+    HbA0:float
+    HbA2:float
+    HbF:float
+    S_Window:float
+    RBC: float
+    HB: float
+    MCV: float
+    MCH: float
+    MCHC: float
+    RDWcv: float
+    Weekness: str
+    Jaundice: str
+
+
+class DiabetesInput(BaseModel):
+    Pregnancies:float
+    Glucose:float
+    BloodPressure:float
+    SkinThickness:float
+    Insulin:float
+    BMI:float
+    DiabetesPedigreeFunction: float
+    Age:float
 
 @spaces.GPU
 def predict(Age,Gender,HbA0,HbA2,HbF,S_Window,RBC,HB,MCV,MCH,MCHC,RDWcv,Weekness,Jaundice):
