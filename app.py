@@ -100,4 +100,4 @@ def predict_diabetes(data: DiabetesInput):
         data.Insulin, data.BMI, data.DiabetesPedigreeFunction, data.Age]])
 
 
-
+    pred=int(diabetes_model.predict(features)[0])
