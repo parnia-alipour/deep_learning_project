@@ -5,3 +5,4 @@ from  sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 
+file=pd.read_csv('diabetes.csv')
