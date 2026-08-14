@@ -106,6 +106,6 @@ def predict_diabetes(data: DiabetesInput):
 
     return {
         "diagnosis":"sick" if pred==1 else "healthy",
-        "sick_probability_percent":round(proba * 100, 2),
-        "healthy_probability_percent": round((1 - proba) * 100, 2),
+        "sick_probability_percent":round(sick_prob * 100, 2),
+        "healthy_probability_percent": round((1 - sick_prob) * 100, 2),
     }
