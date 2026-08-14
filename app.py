@@ -102,3 +102,4 @@ def predict_diabetes(data: DiabetesInput):
 
     pred=int(diabetes_model.predict(features)[0])
     proba=diabetes_model.predict_proba(features)[0]
+    sick_prob=float(proba[1])
