@@ -81,4 +81,6 @@ def predict_thalassemia(data: ThalassemiaInput):
         data.S_Window, data.RBC, data.HB, data.MCV, data.MCH,
         data.MCHC, data.RDWcv, weakness_enc, jaundice_enc]])
 
+    features_scaled=thal_scaler.transform(features)
+
 
