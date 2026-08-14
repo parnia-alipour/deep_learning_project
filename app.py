@@ -93,6 +93,8 @@ def predict_thalassemia(data: ThalassemiaInput):
 
 @app.post("/predict/diabetes")
 def predict_diabetes(data: DiabetesInput):
+    if diabetes_model is None:
+        raise HTTPException(status_code=503,detail="The diabetes model hasn't been uploaded to the server yet (diabetes_model.pkl not found)")
 
 
 
