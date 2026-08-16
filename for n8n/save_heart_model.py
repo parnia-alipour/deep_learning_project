@@ -22,3 +22,7 @@ def preprocess_new(new):
 
 x=np.asanyarray(x)
 y=preprocess_new(y)
+
+
+scaler=preprocessing.StandardScaler().fit(x)
+x_scaler=scaler.transform(x)
