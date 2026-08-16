@@ -26,3 +26,5 @@ y=preprocess_new(x)
 
 scaler=preprocessing.StandardScaler().fit(x)
 x_scaler=scaler.transform(x)
+
+model=LogisticRegression(max_iter=10000,class_weight='balanced').fit(x_scaler,y)
