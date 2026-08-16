@@ -158,3 +158,6 @@ def predict_heart(data: HeartInput ):
     features=np.array([[data.ca,data.age,data.trestbps,data.chol, data.fbs,
         data.restecg, data.thal,data.thalach, data.oldpeak,
         data.slope, data.exang]])
+
+    features[:,[0,3,8]]=np.log1p(features[:,[0,3,8]])
+    features_scaled=scaler_heart.transform(features)
