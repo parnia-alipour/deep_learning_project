@@ -28,3 +28,10 @@ scaler=preprocessing.StandardScaler().fit(x)
 x_scaler=scaler.transform(x)
 
 model=LogisticRegression(max_iter=10000,class_weight='balanced').fit(x_scaler,y)
+
+with open('heart_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
+with open('heart_scaler_model.pkl', 'wb') as f:
+    pickle.dump(scaler, f)
+
