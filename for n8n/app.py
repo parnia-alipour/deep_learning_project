@@ -73,6 +73,27 @@ class DiabetesInput(BaseModel):
     DiabetesPedigreeFunction: float
     Age:float
 
+
+
+
+class HeartInput(BaseModel):
+    class HeartInput(BaseModel):
+        ca:float=Field(...,description="number of major vessels colored by fluoroscopy (0-3)")
+        age:float
+        trestbps:float=Field(...,description="resting blood pressure")
+        chol:float=Field(...,description="serum cholesterol (mg/dl)")
+        fbs:float=Field(...,description="fasting blood sugar>120:1=yes,0=no")
+        restecg:float=Field(...,description="resting ECG results (0-2)")
+        thal:float=Field(...,description="thallium stress test result (1-3)")
+        thalach:float=Field(...,description="maximum heart rate achieved")
+        oldpeak:float=Field(...,description="ST depression induced by exercise")
+        slope:float=Field(...,description="slope of peak exercise ST segment (0-2)")
+        exang:float=Field(...,description="exercise-induced angina: 1=yes, 0=no")
+
+
+
+
+
 @app.get("/")
 def health_check():
     return {"status": "ok","diabetes_model_loaded": diabetes_model is not None}
@@ -125,4 +146,4 @@ def predict_diabetes(data: DiabetesInput):
 
 @app.post("/predict/heart")
 def predict_heart(data: HeartInput ):
-    if heart_model is None or  heart_scaler is None:
+    if heart_model is None or  scaler_heart is None:
