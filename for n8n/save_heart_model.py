@@ -32,6 +32,6 @@ model=LogisticRegression(max_iter=10000,class_weight='balanced').fit(x_scaler,y)
 with open('heart_model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
-with open('heart_scaler_model.pkl', 'wb') as f:
+with open('heart_scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
