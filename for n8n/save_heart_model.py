@@ -14,3 +14,7 @@ y=file['target'].values
 y=np.array(y)
 
 
+def preprocess_new(new):
+    new=np.array(new,dtype=float)
+    new[:,[0,3,8]]=np.log1p(new[:,[0,3,8]])
+    return new
