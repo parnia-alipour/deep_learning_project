@@ -1,8 +1,6 @@
 import pickle
 import numpy as np
-from ipykernel.heartbeat import Heartbeat
 from pydantic import BaseModel
-from pyexpat import features
 from tensorflow.keras.models import load_model
 
 from fastapi import FastAPI,HTTPException
