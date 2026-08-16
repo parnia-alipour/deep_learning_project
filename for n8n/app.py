@@ -170,6 +170,6 @@ def predict_heart(data: HeartInput ):
     return {
         "diagnosis":"sick" if pred==0 else "healthy",
         "sick_probability_percent":round(sick_prob*100, 2),
-        "healthy_probability_precent":round((1-sick_prob)*100,2)
+        "healthy_probability_percent":round((1-sick_prob)*100,2)
 
     }
