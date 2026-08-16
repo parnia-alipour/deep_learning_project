@@ -161,3 +161,6 @@ def predict_heart(data: HeartInput ):
 
     features[:,[0,3,8]]=np.log1p(features[:,[0,3,8]])
     features_scaled=scaler_heart.transform(features)
+
+
+    pred=int(heart_model.predict(features_scaled)[0])
