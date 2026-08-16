@@ -167,3 +167,10 @@ def predict_heart(data: HeartInput ):
     proba=heart_model.predict_proba(features_scaled)[0]
 
     sick_prob=float(proba[0])
+
+    return {
+        "diagnosis":"sick" if pred==0 else "healthy",
+        "sick_probability_percent":round(sick_prob*100, 2),
+        "healthy_probability_precent":round((1-sick_prob)*100,2)
+
+    }
