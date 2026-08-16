@@ -108,3 +108,8 @@ def predict_diabetes(data: DiabetesInput):
         "sick_probability_percent":round(sick_prob * 100, 2),
         "healthy_probability_percent": round((1 - sick_prob) * 100, 2),
     }
+
+
+
+@app.post("/predict/heart")
+def predict_heart(data: )
