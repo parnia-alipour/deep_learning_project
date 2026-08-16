@@ -41,7 +41,7 @@ scaler_heart=None
 try:
     with open("heart_model.pkl", "rb") as f:
         heart_model=pickle.load(f)
-    with open("heart_sclaer.pkl", "rb") as f:
+    with open("heart_scaler.pkl", "rb") as f:
         scaler_heart=pickle.load(f)
 except FileNotFoundError:
     heart_model=None
