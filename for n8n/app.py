@@ -1,5 +1,6 @@
 import pickle
 import numpy as np
+from ipykernel.heartbeat import Heartbeat
 from pydantic import BaseModel
 from tensorflow.keras.models import load_model
 
@@ -29,10 +30,21 @@ diabetes_model=None
 
 try:
     with open("diabetes_model.pkl", "rb") as f:
-        diabetes_model = pickle.load(f)
+        diabetes_model=pickle.load(f)
 except FileNotFoundError:
-    diabetes_model = None
+    diabetes_model=None
 
+
+heart_model=None
+scaler_heart=None
+try:
+    with open("heart_model.pkl", "rb") as f:
+        heart_model=pickle.load(f)
+    with open("heart_sclaer.pkl", "rb") as f:
+        scaler_heart=pickle.load(f)
+except FileNotFoundError:
+    heart_model=None
+    scaler_heart=None
 
 class ThalassemiaInput(BaseModel):
     Age:str =Field(..., description='format: "25 Yrs 3 month"')
@@ -112,4 +124,5 @@ def predict_diabetes(data: DiabetesInput):
 
 
 @app.post("/predict/heart")
-def predict_heart(data: )
+def predict_heart(data: HeartInput ):
+    if heart_model is None or  heart_scaler is None:
