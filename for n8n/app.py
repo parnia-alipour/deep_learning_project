@@ -165,3 +165,5 @@ def predict_heart(data: HeartInput ):
 
     pred=int(heart_model.predict(features_scaled)[0])
     proba=heart_model.predict_proba(features_scaled)[0]
+
+    sick_prob=float(proba[0])
