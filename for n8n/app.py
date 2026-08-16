@@ -147,3 +147,7 @@ def predict_diabetes(data: DiabetesInput):
 @app.post("/predict/heart")
 def predict_heart(data: HeartInput ):
     if heart_model is None or  scaler_heart is None:
+        raise  HTTPException(
+            status_code=503,
+            detail="The heart model hasn't been uploaded to the server yet (heart_model.pkl not found)"
+        )
