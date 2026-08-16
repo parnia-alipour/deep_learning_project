@@ -2,6 +2,7 @@ import pickle
 import numpy as np
 from ipykernel.heartbeat import Heartbeat
 from pydantic import BaseModel
+from pyexpat import features
 from tensorflow.keras.models import load_model
 
 from fastapi import FastAPI,HTTPException
@@ -151,3 +152,9 @@ def predict_heart(data: HeartInput ):
             status_code=503,
             detail="The heart model hasn't been uploaded to the server yet (heart_model.pkl not found)"
         )
+
+
+
+    features=np.array([[data.ca,data.age,data.trestbps,data.chol, data.fbs,
+        data.restecg, data.thal,data.thalach, data.oldpeak,
+        data.slope, data.exang]])
